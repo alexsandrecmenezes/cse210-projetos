@@ -7,7 +7,7 @@ class Program
        Random geradorAlexatorio = new Random();
        int numeroAleatorio = geradorAlexatorio.Next(1, 100);
 
-       int numerodigitado = 0;
+       int numerodigitado = -1;
 
        while (numerodigitado != numeroAleatorio)
        {
@@ -17,11 +17,13 @@ class Program
 
            if (numerodigitado < numeroAleatorio)
            {
-               Console.WriteLine("O número digitado é menor que o número aleatório. Tente novamente.");
+               Console.WriteLine("O número digitado é MENOR que o número aleatório. Tente novamente.");
+               Console.WriteLine("");
            }
            else if (numerodigitado > numeroAleatorio)
            {
-               Console.WriteLine("O número digitado é maior que o número aleatório.");
+               Console.WriteLine("O número digitado é MAIOR que o número aleatório.Tente novamente.");
+               Console.WriteLine("");
            }
            else
            {
